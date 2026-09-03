@@ -1,3 +1,5 @@
+<p align="center"><img src="logo.png" width="180" alt="Pom Pom logo"></p>
+
 # Pom Pom
 
 A minimal Prayer of Mending tracker for World of Warcraft Classic. Self-cast only.
