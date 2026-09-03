@@ -8,7 +8,7 @@
 ## Author: Zeroseven
 ## Version: 1.5
 ## X-Category: Buffs & Debuffs
-## X-License: Public Domain
+## X-License: MIT
 ## SavedVariablesPerCharacter: PomPomDB
 
 PomPom.lua

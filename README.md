@@ -72,7 +72,7 @@ Built and tested on WoW Classic Anniversary (Classic Era 1.15). The TOC also dec
 
 ## License
 
-Public domain (Unlicense). See [LICENSE](LICENSE).
+MIT License. See [LICENSE](LICENSE).
 
 ## Author
 
