@@ -1,0 +1,14 @@
+package-as: PomPom
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+license-output: LICENSE
+
+ignore:
+  - .git
+  - .github
+  - .gitignore
+  - .pkgmeta
+  - screenshots

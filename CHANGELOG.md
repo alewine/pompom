@@ -1,0 +1,35 @@
+# Changelog
+
+## 1.5
+- Ship four custom `.ogg` beeps in the `sounds/` folder as the only preset options.
+- Guard against out-of-range saved `soundIndex` from prior versions.
+
+## 1.4
+- Availability check: addon disables itself gracefully for non-priests, priests without Prayer of Mending, and Shadow-spec priests. Config remains accessible; options are disabled with an explanation.
+- Combat fade: main tracker fades to 25% out of combat, snaps back to full on combat entry. New "Fade out of combat" toggle in config.
+- Re-evaluates on spec / talent / spellbook changes.
+
+## 1.3
+- Config layout reworked: checkboxes at the top, sound picker in the middle, sliders at the bottom.
+- Trimmed config frame padding.
+- Restyled title: bold "Pom Pom" with a small-caps "PRAYER OF MENDING TRACKER" subtitle and hairline rule.
+
+## 1.2
+- Sound dropdown with a **Test** button that plays the currently-selected preset.
+- Curated a new set of sound options.
+
+## 1.1
+- Added Background opacity slider.
+- Play a sound the moment your recast timer expires (edge-triggered) while a PoM is still bouncing.
+- Added Enable sounds toggle.
+
+## 1.0
+- Initial rewrite as a fresh addon (formerly derived from PoMTracker).
+- Icon-forward layout with bounce count as a WoW-style aura badge.
+- Two stacked timer bars: 10 s recast (blue) on top, 30 s bounce duration (gold) on bottom.
+- Pulsing gold glow on the icon when the recast becomes available while PoM is still bouncing.
+- Class-colored target name.
+- `/pom` opens a config panel: Lock frame, Scale, Background opacity, Sound picker + Test.
+- Draggable frame with a gold border + drag handle when unlocked.
+- Self-cast only; ignores other priests' Prayer of Mending.
+- Priest-only.

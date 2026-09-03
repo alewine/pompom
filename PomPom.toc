@@ -1,0 +1,14 @@
+## Interface: 11507
+## Interface-Classic: 11507
+## Interface-BCC: 20504
+## Interface-Wrath: 30403
+## Interface-Cata: 40400
+## Title: Pom Pom
+## Notes: Prayer of Mending tracker (self-cast)
+## Author: Zeroseven
+## Version: 1.5
+## X-Category: Buffs & Debuffs
+## X-License: Public Domain
+## SavedVariablesPerCharacter: PomPomDB
+
+PomPom.lua
