@@ -253,7 +253,14 @@ local function HandleCombatLog()
     if spellID ~= POM_SPELL_ID and spellName ~= POM_SPELL_NAME then return end
 
     if event == "SPELL_AURA_APPLIED" then
-        GoActive(dstName, POM_MAX)
+        -- Don't trust rest[2] on APPLIED here — some Classic clients report a
+        -- wrong value (the max stack, not the current). Infer purely from state:
+        -- if we were already tracking and the target changed, it's a bounce.
+        if state.active and dstName ~= state.targetName then
+            GoActive(dstName, math.max(1, state.charges - 1))
+        else
+            GoActive(dstName, POM_MAX)
+        end
     elseif event == "SPELL_AURA_APPLIED_DOSE" then
         -- rest = { auraType, amount }
         local amount = rest[2] or state.charges
